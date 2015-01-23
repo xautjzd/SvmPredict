@@ -1,0 +1,2 @@
+# SvmPredict
+根据Svm训练好的模型文件进行实时识别，并且提供Web Service的服务。另外简单实现了HttpPost与WebService的通信
