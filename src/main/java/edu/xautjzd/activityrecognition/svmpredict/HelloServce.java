@@ -8,10 +8,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 @Path("/hello")
-@Consumes(MediaType.APPLICATION_JSON + ";charset=UTF-8")
 public class HelloServce {
 	@POST
-	@Consumes(MediaType.APPLICATION_JSON)
+	/*@Consumes(MediaType.APPLICATION_JSON + ";charset=UTF-8")*/
+	@Consumes("application/json")
 	@Produces("text/plain; charset=utf-8")
 	public Response getAction(User u) {
 		String info;

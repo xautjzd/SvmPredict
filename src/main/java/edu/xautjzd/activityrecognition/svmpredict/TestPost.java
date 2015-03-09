@@ -13,7 +13,7 @@ public class TestPost {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s1 = TestPost.sendPost("http://localhost:8080/svmpredict-1.0/hello");
+		String s1 = TestPost.sendPost("http://localhost:8080/svmpredict/hello");
 		System.out.println(s1);
 	}
 
@@ -34,6 +34,7 @@ public class TestPost {
 		try {
 			
 			User user = new User("xautjzd", "陕西省西安市");
+		//	Angry a = new Angry(7,"red","not angry");
 			Gson gson = new Gson();
 			
 			HttpPost request = new HttpPost(url);

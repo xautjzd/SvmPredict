@@ -7,6 +7,7 @@ import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
 import com.sun.jersey.api.json.JSONConfiguration;
 
+
 public class HelloClient {
 
 	public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class HelloClient {
 		clientConfig.getFeatures().put(JSONConfiguration.FEATURE_POJO_MAPPING, Boolean.TRUE);
 		Client client = Client.create(clientConfig);
 		WebResource webResource = client
-				.resource("http://202.200.119.163:8080/svmpredict-1.0/hello");
+				.resource("http://localhost:8080/svmpredict/hello");
 
 		ClientResponse response = webResource.accept("text/plain")
 				.type("application/json").post(ClientResponse.class, u);
